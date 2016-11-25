@@ -11,7 +11,7 @@ public class TestPreserveWholeObject {
     public void
     test() {
         WTF wtf = new WTF();
-        assertThat(wtf.isWithinRange(new Plan(8)), is(false));
+        assertThat(wtf.isWithinRange(new Plan(8)), is(true));
         assertThat(wtf.isWithinRange(new Plan(25)), is(false));
     }
 
