@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.agualis.refactoring.inappropiateintimacy.TestHideDelegateAndRemoveMiddleMan" tests="1" skipped="0" failures="0" errors="0" timestamp="2016-11-25T21:55:26" hostname="MacBook-Air-de-Cristina.local" time="0.001">
+  <properties/>
+  <testcase name="test" classname="com.agualis.refactoring.inappropiateintimacy.TestHideDelegateAndRemoveMiddleMan" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

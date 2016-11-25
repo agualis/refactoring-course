@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.agualis.refactoring.conditionals.TestReplaceNestedConditionalWithGuardClauses" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-11-25T21:55:26" hostname="MacBook-Air-de-Cristina.local" time="0.009">
+  <properties/>
+  <testcase name="test_retired_payment" classname="com.agualis.refactoring.conditionals.TestReplaceNestedConditionalWithGuardClauses" time="0.005"/>
+  <testcase name="test_normal_payment" classname="com.agualis.refactoring.conditionals.TestReplaceNestedConditionalWithGuardClauses" time="0.001"/>
+  <testcase name="test_dead_payment" classname="com.agualis.refactoring.conditionals.TestReplaceNestedConditionalWithGuardClauses" time="0.0"/>
+  <testcase name="test_separated_payment" classname="com.agualis.refactoring.conditionals.TestReplaceNestedConditionalWithGuardClauses" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
