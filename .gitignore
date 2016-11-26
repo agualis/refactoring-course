@@ -1,0 +1,11 @@
+*.iml
+
+## Directory-based project format:
+.idea/
+.gradle/
+
+# IntelliJ
+/out/
+/build
+.idea_modules/
+
