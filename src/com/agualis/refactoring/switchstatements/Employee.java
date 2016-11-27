@@ -5,23 +5,19 @@ public class Employee {
     private int commission = 32;
     private int bonus = 44;
 
-    private int type; //NOTE TYPE IS NOT FINAL --> MUTABLE
-
-    static final int ENGINEER = 0;
-    static final int SALESMAN = 1;
-    static final int MANAGER = 2;
+    private EmployeeType type; //NOTE TYPE IS NOT FINAL --> MUTABLE
 
     Employee(int type) {
-        this.type = type;
+        this.setTypeCode(type);
     }
 
     public int payAmount() {
-        switch (type) {
-            case ENGINEER:
+        switch (getTypeCode()) {
+            case EmployeeType.ENGINEER:
                 return monthlySalary;
-            case SALESMAN:
+            case EmployeeType.SALESMAN:
                 return monthlySalary + commission;
-            case MANAGER:
+            case EmployeeType.MANAGER:
                 return monthlySalary + bonus;
             default:
                 throw new RuntimeException("Incorrect StaticEmployee");
@@ -29,7 +25,14 @@ public class Employee {
     }
 
     public void promoteToManager() {
-        this.type = MANAGER;
+        this.setTypeCode(EmployeeType.MANAGER);
     }
 
+    public int getTypeCode() {
+        return type.getType();
+    }
+
+    public void setTypeCode(int type) {
+        this.type = EmployeeType.newType(type);
+    }
 }
