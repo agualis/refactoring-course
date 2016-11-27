@@ -13,6 +13,4 @@ public class Course {
     public boolean isAdvanced() {
         return isAdvanced;
     }
-
-
 }

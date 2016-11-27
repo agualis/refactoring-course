@@ -1,6 +1,5 @@
 package com.agualis.refactoring.largeclass;
 
-import java.util.Enumeration;
 import java.util.List;
 
 public class OwingPrinter {
