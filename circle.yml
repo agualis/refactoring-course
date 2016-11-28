@@ -8,9 +8,9 @@ machine:
     TERM: dumb
 
 general:
-  branches:
-    only:
-      - master # only build/deploy from master
+#  branches:
+#    only:
+#      - master # only build/deploy from master
   artifacts:
     #- "build/reports/tests" # preserve the generated HTML test reports
 
