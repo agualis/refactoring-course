@@ -29,7 +29,7 @@ public class TestEncapsulateCollection {
 
         assertThat(manolo.getCourses().size(), is(2));
 
-        Course refactoringCourse = new Course ("Refactoring", true);
+        Course refactoringCourse = new Course ("Refactoring", false);
 
         manolo.getCourses().add(refactoringCourse);
         manolo.getCourses().add(new Course ("Hacking Microwaves", false));
