@@ -11,18 +11,28 @@ public class OwingPrinter {
     }
 
     void printOwing(List<Order> orders) {
+        printBanner();
+        double outstanding = calculateOutstanding(orders);
+        printDetails(outstanding);
+    }
+
+    private double calculateOutstanding(List<Order> orders) {
         double outstanding = 0.0;
-        // print banner
-        printLine("**************************");
-        printLine("***** Customer Owes ******");
-        printLine("**************************");
-        // calculate outstanding
         for (Order order : orders) {
             outstanding += order.getAmount();
         }
-        //print details
+        return outstanding;
+    }
+
+    private void printDetails(double outstanding) {
         printLine("name:" + name);
         printLine("amount: " + outstanding);
+    }
+
+    private void printBanner() {
+        printLine("**************************");
+        printLine("***** Customer Owes ******");
+        printLine("**************************");
     }
 
     protected void printLine(String line) {
