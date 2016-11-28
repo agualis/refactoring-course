@@ -14,15 +14,15 @@ public class TestReplaceConditionalWithPolymorphism {
         assertThat(employee.payAmount(), is(25));
     }
 
-    @Test public void
-    testPromoteToManager() {
-        Employee employee = new Employee(DynamicEmployee.SALESMAN);
-
-        assertThat(employee.payAmount(), is(57));
-
-        employee.promoteToManager();
-
-        assertThat(employee.payAmount(), is(69));
-    }
+//    @Test public void
+//    testPromoteToManager() {
+//        Employee employee = new Employee(DynamicEmployee.SALESMAN);
+//
+//        assertThat(employee.payAmount(), is(57));
+//
+//        employee.promoteToManager();
+//
+//        assertThat(employee.payAmount(), is(69));
+//    }
 
 }
