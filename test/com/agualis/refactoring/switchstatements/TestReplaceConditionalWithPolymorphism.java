@@ -18,7 +18,7 @@ public class TestReplaceConditionalWithPolymorphism {
     testPromoteToManager() {
         Employee employee = new Employee(DynamicEmployee.SALESMAN);
 
-        assertThat(employee.payAmount(), is(57));
+        assertThat(employee.payAmount(), is(59));
 
         employee.promoteToManager();
 
