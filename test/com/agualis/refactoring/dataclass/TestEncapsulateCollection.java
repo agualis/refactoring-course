@@ -38,7 +38,7 @@ public class TestEncapsulateCollection {
 
         manolo.getCourses().remove(refactoringCourse);
 
-        assertThat(manolo.getCourses().size(), is(3));
+        assertThat(manolo.getCourses().size(), is(5));
     }
 
     @Test public void
