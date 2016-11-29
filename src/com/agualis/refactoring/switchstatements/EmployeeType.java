@@ -19,4 +19,6 @@ public abstract class EmployeeType {
                 throw new RuntimeException("Incorrect employee type code: " + type);
         }
     }
+
+    public abstract int payAmount(Employee employee);
 }
