@@ -18,7 +18,7 @@ public class Employee {
     public void promoteToManager() {
         this.setTypeCode(EmployeeType.MANAGER);
     }
-    
+
     public void setTypeCode(int type) {
         this.type = EmployeeType.newType(type);
     }

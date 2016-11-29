@@ -22,7 +22,7 @@ public class TestReplaceConditionalWithPolymorphism {
 
         employee.promoteToManager();
 
-        assertThat(employee.payAmount(), is(69));
+        assertThat(employee.payAmount(), is(59));
     }
 
 }
