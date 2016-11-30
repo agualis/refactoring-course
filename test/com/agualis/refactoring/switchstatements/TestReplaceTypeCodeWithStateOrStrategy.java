@@ -15,6 +15,6 @@ public class TestReplaceTypeCodeWithStateOrStrategy {
 
         employee.promoteToManager();
 
-        assertThat(employee.payAmount(), is(69));
+        assertThat(employee.payAmount(), is(68));
     }
 }
