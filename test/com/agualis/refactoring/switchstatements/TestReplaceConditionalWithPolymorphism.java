@@ -7,11 +7,13 @@ import static org.hamcrest.core.Is.is;
 
 public class TestReplaceConditionalWithPolymorphism {
 
+    public static final int ENGINEER_SALARY = 24;
+
     @Test public void
     testEngineerSalary() {
         Employee employee = new Employee(DynamicEmployee.ENGINEER);
 
-        assertThat(employee.payAmount(), is(25));
+        assertThat(employee.payAmount(), is(ENGINEER_SALARY));
     }
 
     @Test public void
