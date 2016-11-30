@@ -5,8 +5,6 @@ public abstract class EmployeeType {
     static final int SALESMAN = 1;
     static final int MANAGER = 2;
 
-    abstract int getType();
-
     public static EmployeeType newType(int type) {
         switch (type){
             case ENGINEER:
@@ -18,5 +16,9 @@ public abstract class EmployeeType {
             default:
                 throw new RuntimeException("Incorrect employee type code: " + type);
         }
+    }
+
+    public int payAmount(Employee employee) {
+        return employee.payAmount();
     }
 }
